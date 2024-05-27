@@ -1,0 +1,9 @@
+
+.element {
+    -webkit-appearance: button;
+    appearance: button; /* Definindo a propriedade padrão */
+  }
+
+  .display.none{
+    @apply hidden;
+  }

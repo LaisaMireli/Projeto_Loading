@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordadinz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../Assets/logooficial.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+    <body class="bg-cover bg-center bg-gradient-to-b bg-white dark:bg-gray-950">
+        <nav class=" bg-gray-50 dark:bg-slate-900 fixed top-0 w-full z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center">
+                        <a class="logo font-serif text-3xl md:text-5xl lg:text-7xl text-black dark:text-white" href="#Inicio">Bordadinz</a>
+                        <div class="hidden md:flex space-x-16 pt-2 ml-96">
+                            <a class="text-lg font-serif text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-500" href="#Inicio" onclick="fecharMenu()">Início</a>
+                            <a class="text-lg font-serif text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-500" href="#Sobre" onclick="fecharMenu()">Sobre</a>
+                            <a class="text-lg font-serif text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-500" href="#Galeria" onclick="fecharMenu()">Galeria</a>
+                            <a class="text-lg font-serif text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-500" href="#Contato" onclick="fecharMenu()">Contato</a>
+                            <div class="font-medium font-sans" id="theme-toggle">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu-button" class="text-black dark:text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#Inicio" class="block px-3 py-2 rounded-md text-base font-serif text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">Início</a>
+                    <a href="#Sobre" class="block px-3 py-2 rounded-md text-base font-serif text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">Sobre</a>
+                    <a href="#Galeria" class="block px-3 py-2 rounded-md text-base font-serif text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">Galeria</a>
+                    <a href="#Contato" class="block px-3 py-2 rounded-md text-base font-serif text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">Contato</a>
+                    <div class="block px-3 py-2 rounded-md text-base font-medium text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700" id="theme-toggle">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="Inicio" class="container mx-auto px-0 py-16 mb-0 mt-32 pb-40 relative z-0">
+            <div class="flex flex-col md:flex-row justify-center items-center bg-black  dark:bg-yellow-50 dark:from-gray-800 dark:to-black rounded-xl border border-gray-300 p-0 shadow-lg">
+                <div class="w-full md:w-1/2 flex flex-col justify-center items-center bg-cover bg-center  relative rounded-xl shadow-lg md:rounded-l-xl md:h-full">
+                    <div class="absolute inset-0 bg-transparent bg-opacity-50 dark:bg-opacity-70 rounded-xl"></div>
+                    <div class="relative z-10 p-6 md:p-10 text-white w-full">
+                        <h1 class="text-4xl md:text-6xl font-serif border-b dark:text-black border-white mb-8 mr-2 pb-2">Organic Fashion</h1>
+                        <p class="text-base md:text-lg mb-6 md:w-3/4 pt-20 pb-10  dark:text-black">Organic Design é mais do que uma simples abordagem estética; é um compromisso com a harmonia entre forma, função e natureza. Inspirado pela beleza orgânica do mundo natural, cada criação reflete uma conexão profunda com o ambiente.</p>
+                        <div class="flex justify-center md:justify-start">
+                            <button class="font-semibold bg-transparent  dark:text-black hover:bg-gray-950 text-white py-4 px-10 md:px-20 border dark:border-black border-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Explorar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:ml-0 md:mr-0 mt-10 md:mt-0">
+                    <img src="../Assets/modelo2.jpg" alt="Imagem" class="w-full h-full object-cover rounded-b-xl rounded-s-full sm:rounded-s-full md:rounded-r-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                </div>
+            </div>
+        </section>
+   
+       
+        <section class="container mx-auto px-6 py-16 mb-0">
+            <h2 class="text-6xl font-serif font-light text-center mb-12 dark:text-white">Descubra a Arte do Bordado</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/bordado inicial.jpg" alt="Bordado 1" class="w-full h-64 object-cover rounded-full shadow-md mb-4 border-2 border-white">
+                    <p class="text-center text-lg font-serif">Técnica de Bordado Tradicional</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/bordadocontenporaneo.jpg" alt="Bordado 2" class="w-full h-64 object-cover rounded-full shadow-md mb-4 border-2 border-white">
+                    <p class="text-center text-lg font-serif">Bordado Contemporâneo</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/bordado floral.jpg" alt="Bordado 3" class="w-full h-64 object-cover rounded-full shadow-md mb-4 border-2 border-white">
+                    <p class="text-center text-lg font-serif">Bordado Floral</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center ">
+                <button class="font-sans font-semibold bg-transparent hover:bg-gray-50 text-black dark:hover:bg-gray-600 dark:text-white py-4 px-10 border border-black dark:border-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Ver Mais Bordados</button>
+                <div class="max-w-full mx-auto mt-3 relative">
+                    <hr class="border-black dark:border-white my-20 border-2"> <!-- Adicionei uma linha divisória -->
+                </div>
+            
+            </div>
+        </section>
+
+        <div class="max-w-full mx-auto mt-3 relative bg-gray-950 dark:bg-white">
+            <section class="col-span-12 lg:col-span-12 mt-20 sm:m-40 sm:pt-20 md:pt-0">
+                <p class="text-6xl font-serif font-light text-center mb-12 pb-60 text-w"></p>
+            </section>
+        
+            <section class="absolute inset-0 flex items-center justify-center">
+                <div class="relative overflow-hidden">
+                    <ul id="slider" class="space-y-4 md:space-y-0 md:flex md:justify-center transition-transform duration-800 ease-in-out">
+                        <li class="h-auto relative md:flex-1">
+                            <img class="object-cover mx-auto mt-2 w-full h-auto rounded-3xl md:h-96 md:w-auto" src="../assets/capaC1.png" alt="carrossel">
+                        </li>
+                        <li class="h-auto relative hidden md:flex-1">
+                            <img class="object-cover mx-auto mt-2 w-full h-auto rounded-3xl md:h-96 md:w-auto" src="../assets/capaC2.png" alt="carrossel">
+                        </li>
+                        <li class="h-auto relative hidden md:flex-1">
+                            <img class="object-cover mx-auto mt-2 w-full h-auto rounded-3xl md:h-96 md:w-auto" src="../assets/capaC3.png" alt="carrossel">
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute flex h-full w-full top-0 left-0">
+                    <div class="my-auto px-5 w-full flex justify-between">
+                        <button onclick="prev()" class="bg-white p-2 rounded-full bg-opacity-80 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button onclick="next()" class="bg-white p-2 rounded-full bg-opacity-80 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+
+  
+    <div class="container mx-auto mt-10">
+        <div class="flex justify-center gap-4 p-4">
+            <div class="flex justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <div class="bg-white p-4 shadow-lg rounded-lg h-full pb-20 border border-gray-400 relative">
+                    <img src="../assets/Sofa.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+                    <p class="absolute bottom-0 right-0 mb-2 mr-2 font-serif text-black text-sm">Serenity Seating Collection</p>
+                </div>
+            </div>
+            <div class="flex justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <div class="bg-white p-4 shadow-lg rounded-lg h-full pb-20 border border-gray-400 relative">
+                    <img src="../assets/fancy_bag.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+                    <p class="absolute bottom-0 right-0 mb-2 mr-2 font-serif text-black text-sm">Éclat Collection</p>
+                </div>
+            </div>
+            <div class="flex justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <div class="bg-white p-4 shadow-lg rounded-lg h-full pb-20 border border-gray-400 relative">
+                    <img src="../assets/vestido.jpg" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+                    <p class="absolute bottom-0 right-0 mb-2 mr-2 font-serif text-black text-sm">Ethereal Elegance Collection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="Sobre" class="container mx-auto px-6 py-16 mb-4">
+        <h1 class="text-6xl p-10 font-serif font-light border-b-4 border-black dark:border-white text-gray-800 dark:text-white mb-20">Sobre</h1>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2">
+            <img src="../Assets/mulher.jpg" alt="Imagem sobre a empresa" class="rounded-full shadow-lg border border-black dark:border-white transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
+          </div>
+          <div class="md:w-1/2 md:ml-10 mt-8 md:mt-0">
+            <p class="text-amber-950 dark:text-white text-center text-sm font-bold md:text-2xl md:font-sans md:font-semibold">
+                Bem-vindo à Bordadinz, uma empresa brasileira renomada em bordados desde 1962. Com mais de seis décadas de tradição, destacamo-nos pela qualidade e arte em cada peça. Utilizamos os melhores materiais e técnicas aprimoradas, exportando nossos bordados para vários países. Nossa Galeria Bordadinz celebra a criatividade e a maestria artesanal, exibindo obras de artistas nacionais e internacionais. Explore nosso mundo de bordados, onde cada fio conta uma história e cada ponto é feito com amor. Visite nossa galeria e conheça a tradição e qualidade da Bordadinz.
+            </p>        
+          </div>
+        </div>
+
+        <div class="bg-slate-900 p-6 md:p-10 mt-10 md:mt-20 rounded-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/carimbo 1.png" alt="carimbo1" class="w-16 h-auto sm:w-16 md:w-32 md:h-32 mb-2">
+                    <p class="text-2xl text-blue-200 text-center font-serif mb-10">Peças exclusivas</p>
+                    <p class="text-sm text-gray-300 text-center">Nossos bordados são peças únicas, criadas especialmente para cada cliente. Cada item é personalizado com detalhes exclusivos, garantindo que você tenha algo verdadeiramente seu. Na Bordadinz, transformamos suas ideias em arte, criando bordados que são tão únicos quanto você.</p>
+                </div> 
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/carimbo 2.png" alt="Carimbo2" class="w-16 h-auto sm:w-16 md:w-32 md:h-32 mb-2">
+                    <p class="text-2xl text-green-200 text-center font-serif mb-10">Produtos de qualidade</p>
+                    <p class="text-sm text-gray-300 text-center">Nossos produtos são sinônimos de qualidade e excelência. Cada peça é cuidadosamente confeccionada com os melhores materiais e técnicas aprimoradas.</p>
+                </div> 
+                <div class="flex flex-col items-center">
+                    <img src="../Assets/carimbo 3.png" alt="Carimbo3" class="w-16 h-auto sm:w-16 md:w-32 md:h-32 mb-2">
+                    <p class="text-2xl text-yellow-100 text-center font-serif mb-10">Atendimento personalizado</p>
+                    <p class="text-sm text-gray-300 text-center">Na Bordadinz, oferecemos um atendimento personalizado para garantir que cada cliente receba exatamente o que deseja. Desde a escolha dos materiais até o design final, trabalhamos de perto com você para criar bordados que atendam às suas expectativas.</p>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="Galeria">
+      <div class="container mx-auto px-6 py-16 mb-4">
+        <h2 class="text-6xl p-10 font-serif font-light border-b-4 border-black dark:border-white  text-gray-800 dark:text-white mb-20">Galeria</h2>
+        <p class="text-amber-950 dark:text-white text-xl font-serif mb-10 ml-4 mt-0">
+            Nossa coleção contém atualmente mais de 1000 obras de arte e design <br> que datam desde os tempos antigos até hoje.
+        </p>  
+        <div class="grid grid-cols-3 gap-1 m-10 ml-4 md:ml-80 mr-4 md:mr-80">
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 1.png" alt="quadro1" class="w-full object-cover">
+            </div>
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 2.png" alt="quadro2" class="w-full object-cover">
+            </div>
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 3.png" alt="quadro3" class="w-full h-full object-cover">
+            </div>
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 4.png" alt="quadro4" class="w-full object-cover">
+            </div>
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 5.png" alt="quadro5" class="w-full h-full object-cover">
+            </div>
+            <div class="bg-white border border-gray-300 overflow-hidden transition-transform hover:scale-105">
+                <img src="../Assets/quadro 6.png" alt="quadro6" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="flex justify-center mt-6 mb-6">
+            <a href="https://www.sunburygallery.org" class="font-sans font-semibold bg-transparent hover:bg-gray-50 text-black dark:hover:bg-gray-600 dark:text-white py-4 px-10 border border-black dark:border-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105l">Ver Mais</a>
+        </div>
+    </div>
+    </section>
+    
+    <section id="Contato" class="bg-white pb-2">
+        <div class="container mx-auto px-6 py-16 mb-4">
+            <div class="flex justify-center md:justify-start mb-8">
+                <h1 class="text-6xl p-10 font-serif font-light border-b-4 border-black text-gray-800 mb-20 w-full">Contato</h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-0 mb-5">
+            <div class="bg-white dark:text-white dark:bg-slate-950 rounded-lg shadow p-6 flex flex-col justify-center items-center lg:pl-3 border-2 lg:ml-40 border-black">
+                <h2 class="text-lg font-semibold mb-4">Entre em Contato</h2>
+                <form class="w-full">
+                    <div class="mb-4">
+                        <label for="nome" class="block mb-1">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="w-full border  border-gray-900 rounded-md px-4 py-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="numero" class="block mb-1">Número:</label>
+                        <input type="tel" id="numero" name="numero" class="w-full border  border-gray-900 rounded-md px-4 py-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-1">E-mail:</label>
+                        <input type="email" id="email" name="email" class="w-full border border-gray-900 rounded-md px-4 py-2 ">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensagem" class="block mb-1">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="w-full border  border-gray-900 rounded-md px-4 py-2 h-24"></textarea>
+                    </div>
+                    <div id="successMessage" class="hidden bg-green-200 text-green-800 px-4 py-2 rounded-md mt-4">Mensagem enviada com sucesso!</div>
+
+                    <button type="submit" class="bg-gray-900 text-white font-serif px-4 py-2 rounded-md hover:bg-black" onclick="sendMessage()">Enviar</button>
+
+                </form>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 flex flex-col justify-center items-center mt-4 md:mt-0">
+                <h2 class="text-lg font-semibold mb-4">Redes Sociais</h2>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/bordadinz?igsh=MTZuNG5sNTB5bXNweQ==" class="text-gray-900 hover:text-black transition duration-300 ease-in-out">
+                        <img src="../Assets/instagram.png" alt="Instagram" class="h-6 w-6">
+                    </a>
+                    <a href="https://x.com/bixinhazinha?t=PsByHrFMFV0vMrBzEIctdA&s=09" class="text-gray-900 hover:text-black transition duration-300 ease-in-out">
+                        <img src="../Assets/twitter.png" alt="Twitter" class="h-6 w-6">
+                    </a>
+                    <a href="https://www.facebook.com" class="text-gray-900 hover:text-black transition duration-300 ease-in-out">
+                        <img src="../Assets/facebook.png" alt="Facebook" class="h-6 w-6">
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <img src="../Assets/logo.png" alt="Logo" class="w-50 h-50">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center">
+                <p class="text-center">&copy; 2024 Bordadinz | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
