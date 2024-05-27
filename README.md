@@ -12,3 +12,5 @@ git clone https://github.com/LaisaMireli/Projeto_Loading.git
 2. Na raiz do projeto, abra o arquivo o seguinte arquivo no navegador:
 
 src/index.html
+
+Você pode ativar o modo escuro através do navegador. Sugestão de navegador: Opera.
